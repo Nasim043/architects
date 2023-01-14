@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-btn: #ff900e;
+  --color-dark: #131313;
+  --color-dark3: #727272;
+  --color-white: #ffffff;
+}
+.hide {
+  display: none;
+}
+/* general styles */
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.btn-explore {
+  background-color: var(--color-btn);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 20px 15px;
+  width: 170px;
+}
+/* header styles */
+.header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.header-container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  width: 1440px;
+  border: 1px solid;
+}
+.name {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  color: var(--color-dark);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.nav-menu ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 35px;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 18px;
+}
+.header-info {
+  text-align: center;
+  width: 862px;
+}
+.info-title {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+.info-description,
+.section-details {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 32px;
+  color: var(--color-dark3);
+}
+
+/* main section styles */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 130px;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  column-gap: 72px;
+  width: 1318px;
+}
+.gallery-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.gallery-image > img {
+  width: 342px;
+  height: 342px;
+  border-radius: 8px;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 45px;
+  margin-bottom: 24px;
+  color: var(--color-dark3);
+}
+
+/* -----------------------------
+            Media query 
+--------------------------------*/
+/* mobile screen */
+@media screen and (max-width: 576px) {
+  .gallery {
+    flex-direction: column;
+    width: 100%;
+  }
+  .gallery-info {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .gallery-image {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    place-items: center;
+  }
+  .gallery-image > img {
+    width: 90%;
+    height: 342px;
+  }
+  .section-title {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .section-details {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .btn-explore {
+    font-size: 16px;
+    padding: 10px 5px;
+    width: 150px;
+  }
+}
