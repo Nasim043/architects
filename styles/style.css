@@ -349,6 +349,8 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
   }
   .feature-text {
     width: 70%;
@@ -357,9 +359,13 @@ form {
     position: relative;
     width: 70%;
   }
+  .feature-image > img {
+    height: 100%;
+    padding-left: 0;
+  }
   .btn-experience {
     position: absolute;
-    bottom: 0px;
+    bottom: -105px;
     padding: 20px 15px;
     border-radius: 8px;
   }
