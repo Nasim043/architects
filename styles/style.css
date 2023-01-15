@@ -128,6 +128,13 @@ nav li {
   margin-bottom: 24px;
   color: var(--color-dark);
 }
+#quick {
+  font-weight: 500;
+  color: var(--color-dark3);
+}
+#feature {
+  color: var(--color-btn);
+}
 .features {
   width: 1140px;
   display: flex;
@@ -335,6 +342,9 @@ form {
     font-weight: 500;
     font-size: 35px;
     margin-bottom: 15px;
+  }
+  #quick {
+    font-weight: 400;
   }
   .section-details {
     font-size: 15px;
